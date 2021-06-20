@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    justify-items: center;
+}
+
+.box-text{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-IMC{
+    margin: 0 auto 0 20px;
+}
+ .imc{
+     margin: 0 20px 0 auto;
+ }
+
+ .box-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ form input, form label {
+    display: block;
+    width: 250px;
+    margin-bottom: 5px;
+  }
+
+.box-user{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    justify-items: center;
+}
