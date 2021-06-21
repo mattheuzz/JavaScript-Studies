@@ -5,13 +5,13 @@
 
 body{
     height: 100vh;
-    background-color: rgb(71, 6, 175);
+    background-color: rgb(87, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.box-for{
+.box-node{
     margin: auto;
     background-color: #fff;
     width: 500px;
@@ -20,4 +20,11 @@ body{
 
 h1, h2{
     text-align: center;
+}
+
+.txt{
+    margin: 10px;
+}
+p{
+    margin: 10px;
 }
