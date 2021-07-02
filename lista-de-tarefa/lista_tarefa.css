@@ -26,3 +26,7 @@ h1{
 #item-lista{
     width: 200px;
 }
+
+li{
+    margin: 20px;
+}
