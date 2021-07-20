@@ -1,3 +1,5 @@
+import './post-card.css'
+
 export const PostCard = (props) =>{
     const post = props.post
     return (

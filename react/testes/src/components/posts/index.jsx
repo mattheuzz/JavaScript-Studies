@@ -1,3 +1,4 @@
+import './posts.css'
 import { PostCard } from "../post-card"
 
 

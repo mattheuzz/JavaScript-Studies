@@ -1,0 +1,17 @@
+.load{
+    width: 100%;
+    background: rgb(180, 3, 250);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.load:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.load:disabled{
+    background: rgb(77, 75, 75);
+    cursor: not-allowed;
+}
