@@ -1,13 +1,12 @@
 import './post-card.css'
 
-export const PostCard = (props) =>{
-    const post = props.post
+export const PostCard = ({title, cover, body, id}) =>{
     return (
         <div className="post"> 
-            <img src={post.cover} alt={post.title}></img>
+            <img src={cover} alt={title}></img>
             <div className="post-content">
-                <h1>{post.title}</h1>
-                <p>{post.body}</p>
+                <h1>{title} {id}</h1>
+                <p>{body}</p>
             </div>
         </div>
     )

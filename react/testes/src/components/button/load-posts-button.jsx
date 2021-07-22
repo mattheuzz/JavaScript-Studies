@@ -1,7 +1,7 @@
 import './button.css'
 
-export const LoadMorePosts = ({txt, onClick, disabled}) =>{
+export const LoadMorePosts = ({text, onClick, disabled}) =>{
     return(
-        <button className="load" onClick={onClick} disabled={disabled}>{txt}</button>
+        <button className="load" onClick={onClick} disabled={disabled}>{text}</button>
     )
 }
