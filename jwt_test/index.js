@@ -1,4 +1,4 @@
-import dotenv from 'dotenv-safe'
+import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken'
 import express from 'express'
 import http from 'http'
@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 dotenv.config()
 
-const verifyJWT = (res, req, next) =>{
+const verifyJWT = (req, res, next) =>{
     const token = req.headers['x-access-token']
     if(!token) return res.status(401).json({ auth: false, message:'Token invalido' })
     jwt.verify(token, process.env.SECRET, function(err, decoded){
@@ -27,7 +27,7 @@ app.get('/', (req, res, next) => {
  
 app.get('/clientes', verifyJWT,(req, res, next) => { 
     console.log("Retornou todos clientes!");
-    res.json([{id:1, nome:'luiz'}]);
+    res.json([{id:1, nome:'Matheus'}]);
 }) 
 
 app.post('/login', (req, res, next) =>{
